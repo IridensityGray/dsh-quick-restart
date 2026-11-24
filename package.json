@@ -1,0 +1,65 @@
+{
+  "name": "@iridensity_gray/dsh-quick-restart",
+  "version": "1.0.0",
+  "description": "Adds Reload and Restart buttons to the DeepSeek Harness session header: reload applies client plugin changes, restart applies host plugin changes.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "restart.ps1",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/DETAIL.md",
+    "docs/DETAIL.zh.md",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "restart",
+    "reload",
+    "developer-tools"
+  ],
+  "author": "BDJC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IridensityGray/dsh-quick-restart.git"
+  },
+  "homepage": "https://github.com/IridensityGray/dsh-quick-restart#readme",
+  "bugs": {
+    "url": "https://github.com/IridensityGray/dsh-quick-restart/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
