@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Quick reload and restart",
+    "description": "Adds two persistent icons in the session header's top-right utilities: a circular reload arrow (client plugin changes apply immediately) and a power glyph that closes the desktop app and reopens it, so host plugin changes take effect. Windows desktop only; a restart interrupts a running conversation; the helper writes its log to %TEMP%\\dsh-quick-restart.",
+    "detail": "docs/DETAIL.md"
+  }
+}
