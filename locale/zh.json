@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "快速刷新与重启",
+    "description": "会话标题栏右上角常驻两个图标：圆形箭头刷新页面（Client 插件改动立即生效），电源符号重启应用（关闭桌面应用并用原命令行自动重开，Host 插件改动随之生效）。仅支持 Windows 桌面版；重启会中断正在运行的对话；重启脚本日志在 %TEMP%\\dsh-quick-restart（保留 7 天）。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}
